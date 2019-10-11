@@ -1,10 +1,16 @@
 package lunchReservation.seller.model;
 
-public class SB2Model {
+import java.util.ArrayList;
+import java.util.List;
+
+import lunchReservation.seller.beans.ReservationByProductBeans;
+import lunchReservation.seller.dao.ReservationDao;
+
+public class ReservationCheckModel {
 	
 	
-	public SB2Beans sb2(String searchday) {
-		SB2Beans sb2=null;
+	public List<ReservationByProductBeans> getList(){
+		List<ReservationByProductBeans> reservationproductlist=new ArrayList<ReservationByProductBeans>();
 		
 		//予約Daoを呼び出す
 		ReservationDao reservationDao =new ReservationDao();
@@ -13,7 +19,6 @@ public class SB2Model {
 			//DBへ接続
 			reservationDao.connect();
 			
-			sb2=reservationDao.getBy(searchday);
 			
 		}catch(Exception e) {
 			//エラー発生時にコンソールログを出力する
@@ -26,6 +31,6 @@ public class SB2Model {
 			}
 		}
 		
-		return sb2;
+		return reservationproductlist;
 	}
 }

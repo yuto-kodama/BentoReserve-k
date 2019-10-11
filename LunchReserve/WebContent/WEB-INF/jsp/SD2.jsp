@@ -35,7 +35,6 @@
 </tr>
 </table>
 <footer>
-<p><button onclick="history.back()">売上日程</button></p>
 </footer>
 </body>
 </html>

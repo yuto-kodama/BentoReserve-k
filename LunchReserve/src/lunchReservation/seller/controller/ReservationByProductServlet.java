@@ -10,18 +10,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SellerMenuServlet
+ * Servlet implementation class ProductCountSearch
  */
-@WebServlet("/SellerMenuServlet")
-public class SellerMenuServlet extends HttpServlet {
+//このサーブレットは使いません。 ReservationByProductCompleteServletへ
+@WebServlet("/SB1")
+public class ReservationByProductServlet extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/SellerMenu.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/SB1.jsp");
 		dispatcher.forward(request, response);
-	}
+		}
 
 }

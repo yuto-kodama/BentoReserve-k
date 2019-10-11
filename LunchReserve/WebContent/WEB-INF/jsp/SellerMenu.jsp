@@ -11,7 +11,7 @@
 <tr>
 <td>
 <p>予約</p>
-<p><a href="SB1">商品別予約一覧</a></p>
+<p><a href="SB2">商品別予約一覧</a></p>
 <p><a href="page2">予約履歴</a></p>
 </td>
 <td>
@@ -21,7 +21,7 @@
 </td>
 <td>
 <p>売上</p>
-<p><a href="SD1">予約商品売上一覧</a></p>
+<p><a href="SD2">予約商品売上一覧</a></p>
 <p><a href="page6">予約商品分析</a></p>
 </td>
 </tr>
