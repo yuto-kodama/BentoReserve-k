@@ -15,7 +15,7 @@ import lunchReservation.seller.model.ReservationCheckModel;
 /**
  * Servlet implementation class ProductCount
  */
-@WebServlet("/SB2")
+@WebServlet("/SB2") //商品別予約検索機能
 public class ReservationByProductCompletetServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -38,3 +38,4 @@ public class ReservationByProductCompletetServlet extends HttpServlet {
 	}
 
 }
+	
