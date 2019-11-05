@@ -7,24 +7,28 @@
 <title>商品別予約検索</title>
 </head>
 <body>
-商品別予約検索 日付       
+商品別予約検索 日付
 <form action="SB2" method="post">
+
 <select name="year">
 <%for(int y=2019; y<2021; y++){%>
 <option value=<%=y %>><%=y %></option>
 <%}%>
-</select><label for="month">月</label>
+</select><label for="year">年</label>
+
 <select name="month">
 <%for(int m=1; m<13; m++){%>
 <option value=<%=m %>><%=m %></option>
 <%}%>
 </select><label for="month">月</label>
+
 <select name="day">
 <%for(int d=1; d<32; d++){%>
 <option value=<%=d %>><%=d %></option>
 <%}%>
 </select><label for="day">日</label>
-<input type="submit"value="検索"> 
+
+<input type="submit"value="検索">
 </form>
 </body>
 </html>
